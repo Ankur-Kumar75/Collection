@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viral Content Hub</title>
+    <link rel="stylesheet" href="viral.css">
+    <script>
+        function addLink() {
+            const link = document.createElement('a');
+            link.href = 'http://192.168.16.100:5500/index.html';
+            link.target = '_blank';
+            link.textContent = 'Open Google';
+            document.body.appendChild(link);
+            link.click();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Viral Content Hub</h1>
+        <p>Explore trending articles and insights!</p>
+        
+    </header>
+    <div class="button-container">
+        <button onclick="addLink()">Viral</button>
+        <button onclick="addLink()">Desi</button>
+        <button onclick="addLink()">Instagram Viral</button>
+        <button onclick="addLink()">Downloads</button>
+        <button onclick="addLink()">Scroll down !</button>
+
+    </div>
+    <main>
+        <div class="container" id="article-container">
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/485371557/photo/twilight-at-spirit-island.jpg?s=612x612&w=0&k=20&c=FSGliJ4EKFP70Yjpzso0HfRR4WwflC6GKfl4F3Hj7fk=" alt="Nature">
+                <h3>Exploring the Beauty of Nature</h3>
+                <p>Nature offers endless beauty with its breathtaking landscapes, lush forests, and serene lakes. It's a perfect escape from the hustle of daily life.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/C4E12AQHws7xx13Xzfg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1645702472356?e=2147483647&v=beta&t=emd5JYP8VSG6IGdgGeBXvFO8uypXQi6P8DyGgWvaZh4">
+                <h3>The Future of Technology</h3>
+                <p>Advancements in technology are shaping the future with innovations in AI, robotics, and space exploration. The possibilities are limitless.</p>
+            </div>
+            <div class="card">
+                <img src="https://imageio.forbes.com/specials-images/dam/imageserve/1171238184/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" alt="Travel">
+                <h3>Top Travel Destinations</h3>
+                <p>Discover the world's most amazing travel destinations, from the beaches of Bali to the historic streets of Rome.</p>
+            </div>
+            <div class="card">
+                <img src="https://image.hurimg.com/i/hurriyet/75/0x0/600fb2ead3806c57e494ed98.jpg" alt="Food">
+                <h3>Culinary Delights</h3>
+                <p>Explore mouth-watering dishes and culinary traditions from around the world that tantalize your taste buds.</p>
+            </div>
+            <div class="card">
+                <img src="https://sportsmatik.com/uploads/misc/3_1626692453.jpg" alt="Sports">
+                <h3>Sports and Fitness</h3>
+                <p>Stay active and healthy with the latest trends in sports, fitness routines, and wellness tips.</p>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/63/BBC-Wonders-of-The-Universe.png" alt="Space">
+                <h3>Wonders of the Universe</h3>
+                <p>The universe holds countless mysteries with galaxies, stars, and planets waiting to be discovered.</p>
+            </div>
+        </div>
+        <button class="load-more" onclick="loadArticles()">Load More</button>
+        <button onclick="addLink()">Download Desi</button>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Viral Content Hub</p>
+    </footer>
+    <script src="viral.js"></script>
+</body>
+</html>
